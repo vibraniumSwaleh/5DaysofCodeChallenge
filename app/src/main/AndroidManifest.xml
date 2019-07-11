@@ -9,12 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyProfile"></activity>
-        <activity android:name=".AboutALC" />
-        <activity android:name=".MainActivity">
+
+        <activity
+            android:name=".MyProfile"
+            android:label="My Profile"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".AboutALC"
+            android:label="About ALC 4.0"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:label="Welcome to ALC">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
